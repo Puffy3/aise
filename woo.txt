@@ -66,3 +66,9 @@ resource "aws_s3_bucket_object" "text_file" {
 </configuration>
 
 </plugin>
+----------------------------------------------------------------------
+
+
+<role rolename="manager-gui"/>
+<role rolename="admin-gui"/>
+<user username="tomcat" password="tomcat" roles="manager-gui,admin-gui,manager-script,manager-jmx,manager-status"/>
